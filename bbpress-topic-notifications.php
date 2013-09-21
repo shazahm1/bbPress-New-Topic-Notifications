@@ -241,7 +241,7 @@ class ja_bbPress_Topic_Notifications {
 
 		if ( 'Anonymous' == $topic_author ) {
 
-			$from     = "From: \"" . html_entity_decode( get_option( 'blogname' ), ENT_QUOTES, get_option( 'blog_charset' ) ) . "\" <$wp_email>";
+			$from     = "From: \"" . $blogname . "\" <$wp_email>";
 
 			if ( '' != $topic_author_email )
 					$reply_to = "Reply-To: $topic_author_email";
